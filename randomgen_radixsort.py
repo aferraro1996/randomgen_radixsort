@@ -2,8 +2,6 @@ import random
 import string
 
 # Function to generate random passwords
-
-
 def generate_passwords(length, amount):
     pool = string.ascii_letters + string.digits  # A-Z, a-z, 0-9
     passwords = []
@@ -13,8 +11,6 @@ def generate_passwords(length, amount):
     return passwords
 
 # Radix Sort Function
-
-
 def radix_sort(passwords, length):
     pool = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
     char_to_index = {char: index for index, char in enumerate(pool)}
@@ -34,8 +30,6 @@ def radix_sort(passwords, length):
     return passwords
 
 # Main function to handle input and output
-
-
 def main():
     # Combined input for length and amount
     length, amount = map(int, input(
@@ -54,7 +48,6 @@ def main():
     print("\nSorted Passwords:")
     for password in sorted_passwords:
         print(password)
-
 
 if __name__ == "__main__":
     main()
